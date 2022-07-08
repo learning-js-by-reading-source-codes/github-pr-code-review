@@ -4,38 +4,6 @@ interface Human {
   age: number;
 }
 
-class Person extends Human {
-  name: string;
-  age: number;
-  contructor(name: string, age: number) {
-    super();
-    this.name = name ?? 'anonymous';
-    this.age = age ?? 1;
-  }
-  getName() {
-    console.log('name =', this.name);
-    return this.name;
-  }
-  getAge() {
-    console.log('age =', this.age);
-    return this.age;
-  }
-}
-
-/*
-
-https://www.typescriptlang.org/play?
-
-*/
-
-/*
-
-interface Human {
-  id?: number;
-  name: string;
-  age: number;
-}
-
 class Person implements Human {
   name: string = '';
   age: number = 0;
@@ -52,5 +20,9 @@ class Person implements Human {
     return this.age;
   }
 }
+
+/*
+
+https://www.typescriptlang.org/play?
 
 */
